@@ -1,242 +1,298 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- header start -->
-    <header class="w-full py-5 bg-amber-950 shadow-lg fixed top-0">
-      <div class="container mx-auto flex flex-row justify-between items-center">
-        <div>
-           <a href="#home" class="font-bold text-3xl">My Portfolio</a>
-        </div>
-        <nav class="flex flex-row gap-10 items-start">
-          <a href="#home">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#about-me">About me</a>
-          <a href="#portfolio">Protfolio</a>
-        </nav>
-        <div>
-          <a href="#contact-us"><button class="text-white p-3 bg-blue-600 rounded-lg hover:bg-blue-800">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- HTML Meta Tags -->
+  <title>Rajeev Kumar | Web Developer Portfolio</title>
+  <meta name="description"
+    content="A passionate web developer skilled in MERN Stack, JavaScript, and modern web technologies. Explore my projects and expertise." />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://rajeevkumarportfolio.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rajeev Kumar | Web Developer Portfolio" />
+  <meta property="og:description"
+    content="A passionate web developer skilled in MERN Stack, JavaScript, and modern web technologies. Explore my projects and expertise." />
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/images/a2906b45-2783-43ec-b9ce-0dac8790b5ee.png?token=8b3P9nyp_cdQw3YBNXxsaW9Z4wT5JgvTs9FeEAqbwig&height=675&width=1200&expires=33278149272" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="rajeevkumarportfolio.vercel.app" />
+  <meta property="twitter:url" content="https://rajeevkumarportfolio.vercel.app/" />
+  <meta name="twitter:title" content="Rajeev Kumar | Web Developer Portfolio" />
+  <meta name="twitter:description"
+    content="A passionate web developer skilled in MERN Stack, JavaScript, and modern web technologies. Explore my projects and expertise." />
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/images/a2906b45-2783-43ec-b9ce-0dac8790b5ee.png?token=8b3P9nyp_cdQw3YBNXxsaW9Z4wT5JgvTs9FeEAqbwig&height=675&width=1200&expires=33278149272" />
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!--This is schema markup-->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rajeev Kumar",
+        "url": "https://rajeevkumarportfolio.vercel.app/",
+        "image": "https://rajeevkumarportfolio.vercel.app/assets/profile.jpg",
+        "jobTitle": "Web Developer",
+        "description": "A passionate web developer skilled in MERN Stack, JavaScript, and modern web technologies.",
+        "sameAs": [
+          "https://github.com/rajeev00005",
+          "https://www.linkedin.com/in/rajeevkumarsaw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.facebook.com/profile.php?id=100006843511349"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="w-full py-5 px-10 bg-white shadow-lg fixed top-0">
+    <div class="container mx-auto flex flex-row justify-between items-center">
+      <div>
+        <a href="#home" class="font-bold text-3xl hover:text-blue-500">My Portfolio</a>
+      </div>
+      <nav class="flex flex-row gap-10 items-start">
+        <a href="#home" class="hover:font-semibold hover:text-blue-500">Home</a>
+        <a href="#skills" class="hover:font-semibold hover:text-blue-500">Skills</a>
+        <a href="#about-me" class="hover:font-semibold hover:text-blue-500">About me</a>
+        <a href="#portfolio" class="hover:font-semibold hover:text-blue-500">Portfolio</a>
+      </nav>
+      <div>
+        <a href="#contact-us"><button class="text-white p-3 bg-blue-600 rounded-lg hover:bg-blue-800">
             Contact me
           </button></a>
-        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- hero section start -->
-    <section class="bg-white pt-[85px] px-10 flex flex-col items-center gap-20 md:px-20 md:flex-row" id="home">
-      <div>
-        <h1 class="text-black text-[50px]">Hey, I am Rajeev</h1>
-        <p class="text-[80px] font-sans font-semibold">
-          A Passionate <span class="text-blue-600">Web Developer</span>
-        </p>
-        <p class="mt-[5px] text-[20px] font-extralight text-gray-700">
-          I build modern, scalable, and high-performance web applications that
-          deliver exceptional user experiences.
-        </p>
-        <div class="mt-8">
-          <button
-            class="border-solid p-3 text-white rounded-lg bg-blue-600 hover:bg-blue-800 transition-all"
-          >
-            Get in Touch
-          </button>
-        </div>
+  <!-- hero section start -->
+  <section class="bg-gray-100 pt-24 px-6 flex flex-col-reverse items-center gap-10 md:px-20 md:flex-row" id="home">
+    <div class="text-center md:text-left">
+      <h1 class="text-black text-4xl md:text-5xl">Hey, I am Rajeev</h1>
+      <p class="mt-4 text-5xl md:text-6xl font-semibold">
+        A Passionate <span class="text-blue-600 text-9xl">Web Developer</span>
+      </p>
+      <p class="mt-2 md:text-xl text-[20px] font-extralight text-gray-700">
+        I build modern, scalable, and high-performance web applications that
+        deliver exceptional user experiences.
+      </p>
+      <div class="mt-6">
+        <button class="px-5 py-3 text-white p-3 bg-blue-600 rounded-lg hover:bg-blue-800">
+          Get in Touch
+        </button>
       </div>
-      <div>
-        <img src="./assets/hero-image.png" alt="" />
-      </div>
-    </section>
+    </div>
+    <div>
+      <img src="./assets/hero-image.png" alt="Hero Image" class="w-full max-w-sm md:max-w-md" />
+    </div>
+  </section>
 
-    <!-- Skills Section Start -->
-    <section class="py-30 px-10 flex flex-col gap-10 md:px-20" id="skills">
-      <div class="flex flex-col text-center">
-        <p class="text-6xl text-blue-500 font-sans font-semibold">My Skills</p>
-        <h2 class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
-          I'm a dedicated MERN Stack Developer with expertise in React.js,
-          Node.js, Express.js, and MongoDB. <br />I love turning ideas into
-          reality with elegant, efficient, and scalable code.
-        </h2>
+  <!-- Skills Section Start -->
+  <section class="py-30 px-10 flex flex-col gap-10 md:px-20" id="skills">
+    <div class="flex flex-col text-center">
+      <p class="text-6xl text-blue-500 font-sans font-semibold">My Skills</p>
+      <h2 class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
+        I'm a dedicated MERN Stack Developer with expertise in React.js,
+        Node.js, Express.js, and MongoDB. <br />I love turning ideas into
+        reality with elegant, efficient, and scalable code.
+      </h2>
+    </div>
+    <div class="flex flex-col gap-10 md:flex-row md:justify-center">
+      <!-- Skill Card 1 -->
+      <div
+        class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]">
+        <img src="./assets/algorithm.png" alt="Strategy" class="w-16 h-16" />
+        <h3 class="mt-4 text-lg font-semibold">
+          Data Structures & Algorithms
+        </h3>
+        <p class="text-gray-600 mt-2">
+          The foundation of efficient programming, data structures like
+          arrays, linked lists, stacks, and trees help in organizing and
+          managing data for optimal performance.
+        </p>
       </div>
-      <div class="flex flex-col gap-10 md:flex-row md:justify-center">
-        <!-- Skill Card 1 -->
-        <div
-          class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]"
-        >
-          <img src="./assets/algorithm.png" alt="Strategy" class="w-16 h-16" />
-          <h3 class="mt-4 text-lg font-semibold">
-            Data Structures & Algorithms
-          </h3>
+
+      <!-- Skill Card 2 -->
+      <div
+        class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]">
+        <img src="./assets/js-file.png" alt="Development" class="w-16 h-16" />
+        <h3 class="mt-4 text-lg font-semibold">JavaScript</h3>
+        <p class="text-gray-600 mt-2">
+          A powerful scripting language used to create interactive and dynamic
+          web applications. It enables features like event handling,
+          animations, and API interactions.
+        </p>
+      </div>
+
+      <!-- Skill Card 3 -->
+      <div
+        class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]">
+        <img src="./assets/code.png" alt="MongoDB" class="w-16 h-16" />
+        <h3 class="mt-4 text-lg font-semibold">HTML5 & CSS3</h3>
+        <p class="text-gray-600 mt-2">
+          The backbone of web development; HTML structures web content, while
+          CSS styles it to enhance user experience and responsiveness.
+        </p>
+      </div>
+
+      <!-- Skill Card 4 -->
+      <div
+        class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]">
+        <img src="./assets/Web Development.png" alt="MongoDB" class="w-16 h-16" />
+        <h3 class="mt-4 text-lg font-semibold">
+          Bootstrap,Tailwind CSS & Figma
+        </h3>
+        <p class="text-gray-600 mt-2">
+          Both are CSS frameworks; Bootstrap provides pre-designed components
+          for rapid UI development, while Tailwind is a utility-first
+          framework that offers more flexibility in styling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="py-24 px-6 md:px-20 bg-gray-100 flex flex-col md:flex-row items-center gap-10" id="about-me">
+    <!-- About Image -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="./assets/about-me.png" alt="About Me" class="w-[550px] h-[650px] md:max-w-rounded-lg shadow-md" />
+    </div>
+    <!-- About Title and Para -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <p class="text-6xl text-blue-500 font-sans font-semibold">About</p>
+      <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
+        I am a passionate MERN Stack Developer with expertise in frontend and
+        backend technologies. I love transforming ideas into reality with
+        clean, scalable, and efficient code.
+      </p>
+      <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
+        "My journey in web development started with HTML, CSS, and Bootstrap,
+        where I built the foundation of responsive design. Then, I learned
+        JavaScript to create dynamic web pages. As I progressed, I explored
+        the MERN stack to enhance my backend skills. Along the way, I worked
+        on various projects, including landing pages and a Generative AI-based
+        interface, constantly improving my skills and creativity."
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section Start -->
+  <section class="py-24 px-6 md:px-20" id="portfolio">
+    <!-- Portfolio Title and Para -->
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl text-blue-500 font-semibold">
+        My Portfolio
+      </h2>
+      <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
+        Showcasing my skills, projects, and experience.
+      </p>
+    </div>
+    <!-- Project Card 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
+        <img src="./assets/project (1).png" alt="Project 1" class="w-full h-80 object-fill" />
+        <div class="p-6">
           <p class="text-gray-600 mt-2">
-            The foundation of efficient programming, data structures like arrays, linked lists, stacks, and trees help in organizing and managing data for optimal performance.
+            A festive-themed page designed for Christmas celebrations.
           </p>
-        </div>
-
-        <!-- Skill Card 2 -->
-        <div
-          class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]"
-        >
-          <img src="./assets/js-file.png" alt="Development" class="w-16 h-16" />
-          <h3 class="mt-4 text-lg font-semibold">JavaScript</h3>
-          <p class="text-gray-600 mt-2">
-            A powerful scripting language used to create interactive and dynamic web applications. It enables features like event handling, animations, and API interactions.
-          </p>
-        </div>
-
-        <!-- Skill Card 3 -->
-        <div
-          class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]"
-        >
-          <img src="./assets/code.png" alt="MongoDB" class="w-16 h-16" />
-          <h3 class="mt-4 text-lg font-semibold">HTML5 & CSS3</h3>
-          <p class="text-gray-600 mt-2">
-            The backbone of web development; HTML structures web content, while CSS styles it to enhance user experience and responsiveness.
-          </p>
-        </div>
-
-        <!-- Skill Card 4 -->
-        <div
-          class="flex flex-col items-start bg-[#CAE0EB] hover:bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl w-full md:w-[22%]"
-        >
-          <img
-            src="./assets/Web Development.png"
-            alt="MongoDB"
-            class="w-16 h-16"
-          />
-          <h3 class="mt-4 text-lg font-semibold">
-            Bootstrap,Tailwind CSS & Figma
-          </h3>
-          <p class="text-gray-600 mt-2">
-            Both are CSS frameworks; Bootstrap provides pre-designed components for rapid UI development, while Tailwind is a utility-first framework that offers more flexibility in styling.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section Start -->
-    <section class="py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10" id="about-me">
-      <!-- About Image -->
-      <div class="w-full md:w-1/2 flex justify-center">
-        <img src="./assets/about-me.png" alt="About Me" class="w-[550px] h-[650px] md:max-w-rounded-lg shadow-md"/>
-      </div>
-      <!-- About Title and Para -->
-      <div class="w-full md:w-1/2 text-center md:text-left">
-        <p class="text-6xl text-blue-500 font-sans font-semibold">About</p>
-        <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
-          I am a passionate MERN Stack Developer with expertise in frontend
-          and backend technologies. I love transforming ideas into reality with
-          clean, scalable, and efficient code.
-        </p>
-        <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
-          "My journey in web development started with HTML, CSS, and Bootstrap, where I built the foundation of responsive design. Then, I learned JavaScript to create dynamic web pages. As I progressed, I explored the MERN stack to enhance my backend skills. Along the way, I worked on various projects, including landing pages and a Generative AI-based interface, constantly improving my skills and creativity."
-        </p>
-      </div>
-    </section>
-
-    <!-- Portfolio Section Start -->
-    <section class="py-24 px-6 md:px-20" id="portfolio">
-      <!-- Portfolio Title and Para -->
-      <div class="text-center">
-        <h2 class="text-4xl md:text-5xl text-blue-500 font-semibold">
-          My Portfolio
-        </h2>
-        <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
-          Showcasing my skills, projects, and experience.
-        </p>
-      </div>
-      <!-- Project Card 1 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-        <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
-          <img src="./assets/project (1).png" alt="Project 1" class="w-full h-80 object-fill"/>
-          <div class="p-6">
-            <p class="text-gray-600 mt-2">
-              A festive-themed page designed for Christmas celebrations.
-            </p>
-            <div class="mt-4">
-              <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
-                <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
-          <img src="./assets/project (2).png" alt="Project 2" class="w-full h-80 object-fill"/>
-          <div class="p-6">
-            <p class="text-gray-600 mt-2">
-              A visually appealing page for travel-related content.
-            </p>
-            <div class="mt-4">
-              <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
-                <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
-          <img src="./assets/project (3).png" alt="Project 3" class="w-full h-80 object-fill"/>
-          <div class="p-6">
-            <p class="text-gray-600 mt-2">
-              A showcase for AI-driven innovations.
-            </p>
-            <div class="mt-4">
-              <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
-                <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
-              </a>
-            </div>
+          <div class="mt-4">
+            <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
+              <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
+            </a>
           </div>
         </div>
       </div>
-    </section>
+      <!-- Project Card 2 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
+        <img src="./assets/project (2).png" alt="Project 2" class="w-full h-80 object-fill" />
+        <div class="p-6">
+          <p class="text-gray-600 mt-2">
+            A visually appealing page for travel-related content.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
+              <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-2xl">
+        <img src="./assets/project (3).png" alt="Project 3" class="w-full h-80 object-fill" />
+        <div class="p-6">
+          <p class="text-gray-600 mt-2">
+            A showcase for AI-driven innovations.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="text-blue-500 font-semibold flex items-center gap-2 hover:underline">View
+              <img src="./assets/arrow.png" alt="arrow" class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section Start -->
-    <section class="py-24 px-6 md:px-20 bg-gray-100" id="contact-us">
+  <!-- Contact Section Start -->
+  <section class="py-24 px-6 md:px-20 bg-gray-100" id="contact-us">
     <!-- Section Title and Para -->
     <div class="text-center mb-8">
-        <h2 class="text-4xl md:text-5xl text-blue-500 font-semibold">Contact Us</h2>
-        <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
-            Feel free to reach out for collaboration or any inquiries.
-        </p>
+      <h2 class="text-4xl md:text-5xl text-blue-500 font-semibold">
+        Contact Us
+      </h2>
+      <p class="mt-10 mb-10 text-[20px] font-extralight text-gray-700">
+        Feel free to reach out for collaboration or any inquiries.
+      </p>
     </div>
     <!-- Main Div of Form -->
     <div class="flex items-center justify-center bg-gray-100 px-6">
-    <!-- Contact Form -->
-        <div class="bg-white p-6 shadow-lg rounded-lg w-full md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-4">Send a Message</h3>
-            <form action="#" method="POST" class="space-y-4">
-                <div>
-                    <label class="block text-gray-700 font-medium">Name</label>
-                    <input type="text" placeholder="Your Name" class="w-full mt-1 p-3 border rounded-lg">
-                </div>
-                <div>
-                    <label class="block text-gray-700 font-medium">Email</label>
-                    <input type="email" placeholder="Your Email" class="w-full mt-1 p-3 border rounded-lg">
-                </div>
-                <div>
-                    <label class="block text-gray-700 font-medium">Message</label>
-                    <textarea placeholder="Your Message" class="w-full mt-1 p-3 border rounded-lg"></textarea>
-                </div>
-                <a href="contact.html" class="mt-6 inline-block bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">
-                    Send Message
-                </a>
-            </form>
-        </div>
+      <!-- Contact Form -->
+      <div class="bg-white p-6 shadow-lg rounded-lg w-full md:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4">Send a Message</h3>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-gray-700 font-medium">Name</label>
+            <input type="text" placeholder="Your Name" class="w-full mt-1 p-3 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium">Email</label>
+            <input type="email" placeholder="Your Email" class="w-full mt-1 p-3 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium">Message</label>
+            <textarea placeholder="Your Message" class="w-full mt-1 p-3 border rounded-lg"></textarea>
+          </div>
+          <a href="contact.html"
+            class="mt-6 inline-block bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">
+            Send Message
+          </a>
+        </form>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer class="bg-gray-900 text-white text-center py-4 flex justify-center items-center gap-4">
+  <footer class="bg-gray-900 text-white text-center py-4 flex justify-center items-center gap-4">
     <p class="text-sm">Made by Rajeev Kumar</p>
-    <a href="https://www.facebook.com/profile.php?id=100006843511349" class="text-blue-400 hover:text-blue-500"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/rajeev00005?igsh=MTlpbjJwOW11YnczdA==" class="text-blue-400 hover:text-blue-500"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/rajeevkumarsaw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-blue-400 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
-</footer>
+    <a href="https://www.facebook.com/profile.php?id=100006843511349" class="text-blue-400 hover:text-blue-500"><i
+        class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/rajeev00005?igsh=MTlpbjJwOW11YnczdA=="
+      class="text-blue-400 hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/rajeevkumarsaw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      class="text-blue-400 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+  </footer>
+</body>
 
-
-  </body>
 </html>
