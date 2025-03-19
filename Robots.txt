@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /#portfolio
+
+Sitemap: https://rajeevkumarportfolio.vercel.app/sitemap.xml
