@@ -64,7 +64,7 @@
       <div>
         <a href="#home" class="font-bold text-3xl hover:text-blue-500">My Portfolio</a>
       </div>
-      <nav class="flex flex-row gap-10 items-start">
+      <nav class="hidden md:flex flex-row gap-10 items-start">
         <a href="#home" class="hover:font-semibold hover:text-blue-500">Home</a>
         <a href="#skills" class="hover:font-semibold hover:text-blue-500">Skills</a>
         <a href="#about-me" class="hover:font-semibold hover:text-blue-500">About me</a>
@@ -79,26 +79,27 @@
   </header>
 
   <!-- hero section start -->
-  <section class="bg-gray-100 pt-24 px-6 flex flex-col-reverse items-center gap-10 md:px-20 md:flex-row" id="home">
-    <div class="text-center md:text-left">
-      <h1 class="text-black text-4xl md:text-5xl">Hey, I am Rajeev</h1>
-      <p class="mt-4 text-5xl md:text-6xl font-semibold">
-        A Passionate <span class="text-blue-600 text-9xl">Web Developer</span>
-      </p>
-      <p class="mt-2 md:text-xl text-[20px] font-extralight text-gray-700">
-        I build modern, scalable, and high-performance web applications that
-        deliver exceptional user experiences.
-      </p>
-      <div class="mt-6">
-        <button class="px-5 py-3 text-white p-3 bg-blue-600 rounded-lg hover:bg-blue-800">
-          Get in Touch
-        </button>
-      </div>
+  <section class="w-full min-h-screen bg-gray-100 pt-40 px-6 flex flex-col-reverse items-center gap-10 md:px-20 md:flex-row" id="home">
+  <div class="text-center md:text-left">
+    <h1 class="text-black text-4xl md:text-5xl font-bold">Hey, I am Rajeev</h1>
+    <p class="mt-4 text-4xl md:text-5xl font-semibold">
+      A Passionate <span class="text-blue-600 text-5xl md:text-6xl">Web Developer</span>
+    </p>
+    <p class="mt-2 text-lg md:text-xl font-light text-gray-700 leading-relaxed">
+      I build modern, scalable, and high-performance web applications that 
+      deliver exceptional user experiences.
+    </p>
+    <div class="mt-6">
+      <button class="px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-800 transition-all duration-300">
+        Get in Touch
+      </button>
     </div>
-    <div>
-      <img src="./assets/hero-image.png" alt="Hero Image" class="w-full max-w-sm md:max-w-md" />
-    </div>
-  </section>
+  </div>
+  <div>
+    <img src="./assets/hero-image.png" alt="Hero Image" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg" />
+  </div>
+</section>
+
 
   <!-- Skills Section Start -->
   <section class="py-30 px-10 flex flex-col gap-10 md:px-20" id="skills">
